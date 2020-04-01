@@ -6,33 +6,33 @@
 #PBS -q ensam
 #PBS -V
 
-# Load modules
+#Load modules
 module load hisat2/2.0.4
-# Change to working directory
+#Change to working directory
 hisat2-build -p 10 -f /LUSTRE/usuario/jmvilla/TrichoNet/genoma_pacbio/Trichoderm
 a_atroviride_IMI_206040_v2.1.fasta /LUSTRE/usuario/jmvilla/TrichoNet/Index_pacbi
 o/pacbiov2.1
 
 
-##mapeo usando Hisat2
+# mapeo usando Hisat2
 
-# qsub parameters
+#qsub parameters
 #rameters
 ppn=8
 qsubParams="-V -q default -l nodes=1:ppn=$ppn,vmem=30g -N hisat2"
 
-# Working directory and change to there
+#Working directory and change to there
 RNAseqDir="/LUSTRE/usuario/jmvilla/RNAseq_total/scripts"
 cd ${RNAseqDir}
 
-# In/output folder
+#In/output folder
 trimmDir="/LUSTRE/usuario/jmvilla/TrichoNet/RNAseq_todas/Fibo"
 hisat2Out="/LUSTRE/usuario/jmvilla/TrichoNet/mapeo_pacbioV21/"
 
-# HISAT2 params
+#HISAT2 params
 hisatParams="-q -p $ppn --dta"
 
-# Modules
+#Modules
 loadMod="module load samtools/1.3.1; module load hisat2/2.0.4"
 
 genome="/LUSTRE/usuario/jmvilla/TrichoNet/Index_pacbio/pacbiov2.1"
@@ -56,17 +56,17 @@ rm ${hisat2Out}/${sampName}.sam"
 
 echo "$loadMod; $cmd" | qsub $qsubParams
 
-# break
+#break
 
 done
 
-#tanto para el genoma de referencia del JGI como para el de PacBio se usando los mismos parametros de mapeo.
+# tanto para el genoma de referencia del JGI como para el de PacBio se usando los mismos parametros de mapeo.
 
 
-#Resultado de comparación del mapeo usando ultimo ensamble de pacbio y JGI.
+## Resultado de comparación del mapeo usando ultimo ensamble de pacbio y JGI.
 
 
-Resultado en porcentaje de mapeo total:
+## Resultado en porcentaje de mapeo total:
 
 
 
