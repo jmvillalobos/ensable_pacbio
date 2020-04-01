@@ -66,10 +66,13 @@ done
 ## Resultado de comparación del mapeo usando ultimo ensamble de pacbio y JGI.
 
 
-## Resultado en porcentaje de mapeo total:
+# Resultado en porcentaje de mapeo total:
 
 
+![Diapositiva1](https://user-images.githubusercontent.com/22058504/78101390-9e8b9500-73a4-11ea-8606-fcdf4cd19f95.jpeg)
 
+
+# Resultado en porcentaje de lecturas que mapean a una sola región:
 
 
 ![Diapositiva1](https://user-images.githubusercontent.com/22058504/78094747-8ad73300-7392-11ea-9a5f-9be6834bfa37.jpeg)
