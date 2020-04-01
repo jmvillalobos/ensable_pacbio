@@ -1,3 +1,5 @@
 # ensable_pacbio
 
-[grafica_mapeo (1).pdf](https://github.com/jmvillalobos/ensable_pacbio/files/4412449/grafica_mapeo.1.pdf)
+Resultado de comparación del mapeo usando ultimo ensamble de pacbio y JGI.
+
+![Diapositiva1](https://user-images.githubusercontent.com/22058504/78094747-8ad73300-7392-11ea-9a5f-9be6834bfa37.jpeg)
