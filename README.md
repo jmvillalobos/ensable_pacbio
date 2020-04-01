@@ -1,4 +1,4 @@
-# ensable_pacbio
+# Comparación de cantidad de mapeo RNAseq a ensamble de referencia y PacBio del hongo Trichoderma atroviride
 ##Index para PacBio versión 2.1
 
 #PBS -N index
